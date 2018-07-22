@@ -1,0 +1,21 @@
+.home {
+  padding: 25px;
+  background-color: #b3bfb8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.songs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+
+
+.song {
+  max-width: 400px;
+}
