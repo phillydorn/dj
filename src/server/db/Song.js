@@ -12,7 +12,7 @@ module.exports = (sequelize, Sequelize) => {
   });
 
   // force: true will drop the table if it already exists
-  Song.sync({force: false}).then(() => {
+  Song.sync({force: true}).then(() => {
     // Table created
     return true
   });
