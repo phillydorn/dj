@@ -2,8 +2,10 @@ const Sequelize = require('sequelize');
 const fs = require('fs');
 const path = require('path');
 
-const sequelize = new Sequelize('dj', 'phillydorn', 'postgresdj', {
-  host: 'pd-postgresql.ceqq6ogxanih.us-west-2.rds.amazonaws.com',
+const sequelize = new Sequelize(process.env.DB_DATABASE, process.env.DB_USER, process.env.DB_PASSWORD, {
+// const sequelize = new Sequelize('dj', 'phillydorn', 'postgresdj', {
+  // host: 'pd-postgresql.ceqq6ogxanih.us-west-2.rds.amazonaws.com',
+  host: process.env.DB_HOST,
   dialect: 'postgres',
   operatorsAliases: false,
 
