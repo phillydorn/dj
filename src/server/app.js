@@ -1,5 +1,9 @@
 "use strict";
 
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+console.log('user1', process.env.DB_USER)
+}
 const Koa= require('koa');
 const serve= require('koa-static');
 const KoaBodyParser= require('koa-bodyparser');
